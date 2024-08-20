@@ -1,0 +1,646 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+:root{
+    --primary_color: rgb(6, 12, 83);
+    --secondary_color: rgb(255, 255, 255);
+    --third_color: rgb(75, 150, 163);
+    --fourth_color: rgb(32, 53, 112);
+    --fifth_color: rgb(25, 118, 180);
+    --sixth_color: rgba(162, 241, 255, 0.288);
+    --seventh_color: rgba(123, 202, 255, 0.356);
+}
+#nav img{
+    height: 2.5rem;
+}
+#nav{
+    display: flex;
+    width: 100%;
+    background-color:var(--primary_color);
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    gap: 40rem;
+    overflow: hidden;
+    position:fixed;
+    z-index: 1000;
+}
+#nav a{
+    text-decoration: none;
+    color: var(--secondary_color);
+    font-size: 2rem;
+}
+
+#nav .access{
+    display: flex;
+    align-items: center;
+    gap:2.5rem;
+}
+#nav .options{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    font-weight: 600;
+}
+#nav .cliente{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+#nav .menu{
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+#nav .access a{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+#nav .access .button{
+    background-color: var(--third_color) ;
+    padding:2rem;
+    font-size:1.7rem;
+}
+#nav .menu img{
+    height: 3.5rem;
+}
+#header img{
+    height: 62rem;
+    clip-path: polygon(33% 0, 100% 0, 100% 100%, 0% 100%);
+    position: relative;
+    left: 5rem;
+
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    width: 100%;
+    justify-content: end;
+    background-color: var(--fourth_color);
+}
+#header h1{
+    color: var(--secondary_color);
+    font-size: 4.5rem;
+    text-align:left;
+}
+#header .info{
+    width: 54.2rem;
+    position: relative;
+    left: 5rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+}
+#header p{
+    color: var(--secondary_color);
+    margin-top: 2.5rem;
+    font-size: 2rem;
+}
+#header .info a {
+    text-decoration: none;
+    color: var(--secondary_color);
+    background-color: var(--fifth_color);
+    width: 15rem;
+    text-align: center;
+    margin-top: 5rem;
+    padding: 1.8rem 0rem;
+    font-size: 1.8rem;
+}
+#header a{
+    text-decoration: none;
+    color: var(--secondary_color);
+    margin-top: 28rem;
+    position: relative;
+    left: 3rem;
+    font-size: 3rem;
+    font-weight: 1000;
+}
+#main{
+    display:flex ;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+#main .apoyo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    background-color: var(--sixth_color);
+    width: 120rem;
+    align-items: center;
+    justify-content: space-evenly; 
+    gap:4rem;
+    height: 17rem;
+}
+#main .apoyo img{
+    height: 14rem;
+}
+#main .apoyo div{
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    position:relative;
+    left: -4rem;
+    width: 65rem;
+}
+#main .apoyo a , #main .finanzas_button{
+    text-decoration: none;
+    color: var(--secondary_color);
+    background-color: var(--fifth_color);
+    width: 15rem;
+    text-align: center;
+    padding: 1.8rem 0rem;
+    font-size: 1.8rem;
+}
+#main .nav{
+    display: flex;
+    margin-top: 10rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+#main .nav_options {
+    display: flex;
+    justify-content: space-around;
+    width: 130rem;
+}
+#main .nav_options div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+#main .nav_options img{
+    height: 2.2rem;
+}
+#main .nav a{
+    font-size: 2.9rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--primary_color);
+}
+#main .nav_options a , #main .finanzas_a{
+    text-decoration: none;
+    color: var(--fifth_color);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+#main .aviso{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    background-color: var(--seventh_color);
+    width: 100%;
+    align-items: center;
+    height: 20rem;
+    justify-content: center
+}
+#main .aviso div{
+    display: flex;
+    flex-direction: column;
+    width: 100rem;
+    gap: 2rem;
+    
+}
+#main .aviso div h1{
+    font-size: 2.5rem;
+}
+#main .aviso div p{
+    font-size: 2rem;
+}
+#main .aviso div a{
+    text-decoration: none;
+    color: var(--primary_color);
+    font-size: 1.8rem;
+}
+#main .aviso .aviso_img_primary{
+    width: 3rem;
+    position: relative;
+    left: -2rem;
+    top: -5rem;
+}
+#main .main_cards{
+    display:flex ;
+    width: 100%;
+    justify-content: center;
+    align-items:center ;
+    background-color: rgb(243, 243, 243);
+    margin-top: 4rem;
+}
+#main .cards{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    padding: 10rem 0rem;
+}
+
+#main .card{
+    display: flex;
+    flex-direction: column;
+    width: 36rem;
+    height: 56.8rem;
+    background-color: var(--secondary_color);
+
+}
+#main .card  img{
+    width: 36rem;
+    height: 24rem;
+}
+#main .card_a img{
+    width: 2rem;
+    height: 2rem;
+}
+#main .card_a{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 1rem;
+    margin: 5rem 0rem 2rem 2.5rem ;
+}
+#main .special{
+    margin: 7.8rem 0rem 2rem 2.5rem ;
+}
+#main .card_a a{
+text-decoration: none;
+color: var(--primary_color);
+font-size: 1.4rem;
+}
+#main .card h1{
+    font-size: 3rem;
+    width: 30rem;
+    margin: 1.7rem 0rem 1rem 2.5rem ;
+}
+#main .card p{
+    font-size: 1.8rem;
+    margin: 1rem 0rem 2rem 2.5rem ;
+    width: 28rem;
+}
+#main ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 20px; /* Adjust padding as needed */
+    font-size: 1.5rem;
+}
+
+#main ul li {
+    position: relative; /* Necessary for positioning the image */
+    padding-left: 30px; /* Space for the custom bullet image */
+margin-bottom: 1rem;}
+
+#main ul li::before {
+    content: '';
+    background-image: url('bbva/line-svgrepo-com.svg'); /* Your image path */
+    background-size: contain; /* Ensure the image scales properly */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    width: 20px; /* Set the desired width of the bullet */
+    height: 20px; /* Set the desired height of the bullet */
+    position: absolute;
+    left: 0; /* Align the image to the left */
+    top: 50%; /* Vertically center the image */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+}
+#main .finanzas{
+    display: flex;
+    background-color: var(--fourth_color);
+    margin-top: 3rem;
+    width: 117.6rem;
+    height: 24.8rem;
+    justify-content: space-between;
+}
+#main .finanzas img{
+    clip-path: polygon(16% 0, 100% 0, 100% 100%, 10% 100%);
+    width: 58.8rem;
+}
+#main .finanzas div{
+    display: flex;
+    flex-direction: column;
+    color: var(--secondary_color);
+    gap: 1.5rem;
+}
+#main .finanzas p{
+    font-size: 1.7rem;
+}
+#main .finanzas h1{
+    font-size: 2.5rem;
+    font-weight: 100;}
+#main .finanzas_info{
+    margin: 5rem;
+}
+#main .finanzas_a{
+    color: rgb(68, 211, 255);
+}
+#main .finanzas_info div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
+#main .aviso .img_aviso{
+    width: 3rem;
+    position: relative;
+    left: -2rem;
+    top: -4rem;
+}
+#main .phone{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(10, 84, 168);
+    margin-top: 3rem;
+    width: 100%;
+    height: 91.2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+#main .phone_options{
+    display: flex;
+    width: calc(57.2rem * 2);
+    height: calc(32rem * 2);
+    flex-wrap: wrap;
+}
+#main .phone_options div{
+    display: flex;
+    flex-direction: column;
+    height: 32rem;
+    width: 57.2rem;
+    color: var(--secondary_color);
+}
+#main .phone_options div:nth-child(1){
+    background-image: url(bbva/bbva-mx-go-digital.im1617051314031im.avif);
+    background-size: cover;
+}
+#main .phone_options div:nth-child(2){
+    background-image: url(bbva/nuevas-funcionalidades-godigital.im1625848831579im.avif);
+    background-size: cover;
+}
+#main .phone_options div:nth-child(3){
+    background-image: url(bbva/godigital-dimo.im1691619129764im.avif);
+    background-size: cover;
+}
+#main .phone_options div:nth-child(4){
+    background-image: url(bbva/nueva-tarjeta-contactless-Go-digital.im1631666537092im.avif);
+    background-size: cover;
+}
+
+#main .phone_options h1{
+    font-size: 2.5rem;
+    width: 24rem;
+    margin: 13rem 0rem 0rem 3rem;
+}
+#main .phone_options p{
+    font-size: 1.7rem;
+    width: 26rem;
+    margin: 2rem 0rem 0rem 3rem;
+}
+#main .phone h1{
+    color: var(--secondary_color);
+    font-size: 3.5rem;
+    font-weight: 0;
+}
+#main .phone a{
+    color: var(--secondary_color);
+    font-size: 2rem;
+    font-weight: 0;
+    text-decoration: none;
+    margin-bottom: 3rem;
+}
+#main .main_cards_section{
+    display: flex;
+    width: 117.6rem;
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 3rem;
+}
+#main .main_primary_card img{
+    width: 3rem;
+}
+#main .main_primary_card h1, #main .secondary_cards_text h1{
+    font-size: 2.1rem;
+}
+#main .main_primary_card p, #main .secondary_cards_text p{
+    font-size: 1.5rem;
+}
+#main .main_primary_card a, #main .secondary_cards_text a ,#main .advice a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--fourth_color);
+}
+#main .main_special_card img{
+    width: 90.6rem;
+    height: 33.5rem;
+    position: relative;
+    left: -17rem;
+}
+#main .main_special_card h1{
+    font-size: 3.5rem;
+    margin: 2rem 0rem 0rem 3rem;
+}
+#main .main_special_card p{
+    font-size: 1.6rem;
+    margin: 1rem 0rem 0rem 3rem;
+    width: 46rem;
+}
+#main .main_special_card a{
+    font-size: 1.8rem;
+    margin: 15rem 0rem 0rem 3rem;
+    text-decoration: none;
+    color: var(--fourth_color);
+}
+#main .main_primary_cards{
+    display: flex;
+    height: 63.8rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#main .main_special_card{
+    display: flex;
+    flex-direction: column;
+    width: 55.6rem;
+    height: 63.8rem;
+    background-color: rgb(243, 243, 243);
+    overflow: hidden;
+}
+#main .main_primary_card{
+    display: flex;
+    flex-direction: column;
+    width: 26.2rem;
+    height: 30.3rem;
+    background-color: rgb(243, 243, 243);
+    padding: 3rem;
+    gap: 1.5rem;
+}
+#main .main_special_card_size img{
+    width: 55.6rem;
+    position: relative;
+    left: 0;
+}
+#main .main_secondary_cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 63.8rem;
+    gap: 3rem;
+}
+#main .secondary_cards img{
+    width: 10rem;
+    height: 10rem;
+    margin: 0rem 5rem;
+}
+#main .secondary_cards{
+    display: flex;
+    flex-direction: row;
+    width: 55.6rem;
+    height: 30.3rem;
+    align-items: center;
+    background-color:  rgb(243, 243, 243);
+}
+#main .secondary_cards_text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-right: 4.8rem;
+}
+
+#main .advice{
+    background-color: var(--fourth_color);
+    margin-top: 10rem;
+}
+#main .advice *{
+    color: var(--secondary_color);
+}
+#main .advice a{
+    color: var(--secondary_color);
+}
+#main .advice img{
+    margin-top: 2rem;
+}
+#main .news{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    margin-top: 10rem;
+}
+#main .news_cards{
+    display: flex;
+    gap: 4rem;
+}
+#main .news_card{
+    display: flex;
+    flex-direction: column;
+    width: 36rem;
+    height: 77.2rem;
+    background-color: rgb(247, 247, 247);
+    align-items: center;
+    justify-content: space-between;
+}
+#main .news_card img{
+
+    width: 36rem;
+
+}
+#main .news h1{
+    font-size: 3rem;
+}
+#main .news_card h1{
+    width: 30rem;
+    font-size: 2.5rem;
+}
+#main .news_card p{
+    width: 30rem;
+    font-size: 1.7rem;
+}
+#main .news a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: rgb(3, 3, 85);
+    margin-bottom: 4rem;
+}
+#main .location{
+    display:flex;
+    width:100%;
+    background-color: rgb(247, 247, 247);
+    justify-content: center;
+    align-items: center;
+    height: 44.8rem;
+    gap: 20rem;
+}
+#main .location_info img{
+    width: 7.2rem;
+}
+#main .location_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+#main .location_info h1{
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+#main .location_info a, #main .version a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgb(68, 132, 175);
+}
+#main .backgrond_location{
+    background-color: var(--secondary_color);
+    width: 18.4rem;
+    height: 18.4rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 100rem;
+}
+#main .version img {
+    width: 3rem;
+    position: relative;
+    top: -2.5rem;
+    left: 1rem;
+}
+#main .version{
+    display: flex;
+    width: 117.6rem;
+    height: 12.8rem;
+    background-color: rgba(132, 203, 236, 0.384);
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: space-around;
+}
+#main .version h1{
+    font-size: 2.5rem;
+    width: 110rem;
+}
+#main .version_text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#footer{
+    display: flex;
+    background-color: var(--primary_color);
+    width: 100%;
+    margin-top: 3rem;
+    height: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+#footer img{
+    width: 20rem;
+}
+
+
+
+
